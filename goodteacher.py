@@ -5,5 +5,9 @@ print("|    Name : Leo                                  |")
 print("|    Version : 01                                |")
 print("|                                                |")
 print(" ------------------------------------------------")
-username = input("Teacher's name (try MrHoran)")
-print(username + " is an ok teacher")
+x = input("Teacher's name (try Mr Horan) ")
+y = "Mr Horan"
+if x == y:
+    print ("You're lucky, he is a great teacher.")
+else:
+    print(x + " is an ok teacher")
