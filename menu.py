@@ -1,6 +1,4 @@
 def menu():
-    import os
-    os.system('cls')
     print(" ------------------------------------------------")
     print("|                                                |")
     print("|    07Menu                                      |")
@@ -48,6 +46,7 @@ def menu():
         input("Press Enter to continue ")
     else:
         input("Press Enter to continue ")
+        input.clear("----End of Output -----------------------------")
         return menu()
 def helloworld():
     print("Hello World")
