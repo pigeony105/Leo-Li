@@ -129,7 +129,7 @@ while a != "x":
         print(" ")
         print("----Start of Output ---------------------------")
         print(" ")
-        print("Invalid option")
+        print("invalid option")
         print(" ")
         print("----End of Output -----------------------------")
         print(" ")
