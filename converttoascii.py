@@ -1,11 +1,10 @@
 print(" ------------------------------------------------")
 print("|                                                |")
-print("|    07StringLoop                                |")
+print("|    08ConvertToASCII                            |")
 print("|    Name : Leo                                  |")
 print("|    Version : 01                                |")
 print("|                                                |")
 print(" ------------------------------------------------")
-x = input("What is your string? ")
-string = x
-for i in range( len(string) ):
-    print(string[i])
+string = input("What is your string? ")
+for i in range(len(string)):
+    print("%c = %d" %(string[i], ord(string[i])))

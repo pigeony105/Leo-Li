@@ -1,3 +1,5 @@
+import os 
+clearConsole = lambda : os.system("cls")
 def helloworld():
     print(" ")
     print("----Start of Output ---------------------------")
@@ -92,6 +94,7 @@ def exit():
     input("Press Enter to continue ")
     quit()
 def menu():
+    clearConsole()
     print(" ------------------------------------------------")
     print("|                                                |")
     print("|    07Menu                                      |")
@@ -136,6 +139,7 @@ while a != "x":
         print(" ")
         print(" ")
         input("Press enter to continue")
+    clearConsole()
     menu()
     a = input("Enter an option ")       
 print(" ")
