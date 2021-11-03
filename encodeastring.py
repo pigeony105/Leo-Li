@@ -3,4 +3,6 @@ char = x
 i = ord(char[0])
 i += 1
 char = chr(i)
-print(f"Alphabet after t is {char}")
+print(x)
+print("=")
+print(char)
