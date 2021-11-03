@@ -1,8 +1,7 @@
-x = input("What is the name of your string?")
-char = x
-i = ord(char[0])
-i += 1
-char = chr(i)
-print(x)
-print("=")
-print(char)
+string = input("What is your string? ")
+message = ""
+for element in string:
+    x = chr(ord(element)+1)
+    print(element,"=",x)
+    message += x
+    print(message)
