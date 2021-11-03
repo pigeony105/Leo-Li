@@ -97,7 +97,7 @@ def stringLoop():
     print(" ")
     print(" ")
     input("Press enter to continue")
-def convertacsii():
+def convertascii():
     print(" ")
     print("----Start of Output ---------------------------")
     print(" ")
