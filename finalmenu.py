@@ -141,7 +141,7 @@ def menu():
     clearConsole()
     print(" ------------------------------------------------")
     print("|                                                |")
-    print("|    10FinalMenu                                 |")
+    print("|    Final Version                               |")
     print("|    Name : Leo                                  |")
     print("|    Version : 01                                |")
     print("|                                                |")
