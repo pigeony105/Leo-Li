@@ -1,4 +1,100 @@
+import os 
+clearConsole = lambda : os.system("cls")
+def helloworld():
+    print(" ")
+    print("----Start of Output ---------------------------")
+    print(" ")
+    print("Hello World")
+    print(" ")
+    print("----End of Output -----------------------------")
+    print(" ")
+    print(" ")
+    print(" ")
+    input("Press enter to continue")
+def goodbyeworld():
+    print(" ")
+    print("----Start of Output ---------------------------")
+    print(" ")
+    print("Hello World")
+    input("------> Program paused - press enter to continue")
+    print("Goodbye World")
+    print(" ")
+    print("----End of Output -----------------------------")
+    print(" ")
+    print(" ")
+    print(" ")
+    input("Press enter to continue")
+def goodbyeperson():
+    print(" ")
+    print("----Start of Output ---------------------------")
+    print(" ")
+    print("Hello")
+    username = input("What is your name ? ")
+    print("Goodbye " + username)
+    print(" ")
+    print("----End of Output -----------------------------")
+    print(" ")
+    print(" ")
+    print(" ")
+    input("Press enter to continue")
+def goodteacher():
+    print(" ")
+    print("----Start of Output ---------------------------")
+    print(" ")
+    x = input("Teacher's name (try Mr Horan) ")
+    y = "Mr Horan"
+    if x == y:
+        print ("You are lucky, he is a great teacher.")
+    else:
+        print(x + " is an ok teacher")
+    print(" ")
+    print("----End of Output -----------------------------")
+    print(" ")
+    print(" ")
+    print(" ")
+    input("Press enter to continue")
+def forloop():
+    print(" ")
+    print("----Start of Output ---------------------------")
+    print(" ")
+    for x in range(1, 500):
+        print(x)
+    print(" ")
+    print("----End of Output -----------------------------")
+    print(" ")
+    print(" ")
+    print(" ")
+    input("Press enter to continue")
+def whileloop():
+    print(" ")
+    print("----Start of Output ---------------------------")
+    print(" ")
+    i = input("What is the name of this subject ")
+    while i != "IST":
+        print("Not Correct - try again")
+        i = input("What is the name of this subject ")
+    print(" ")
+    print(" ")
+    print(" Congratulations!!")
+    print(" ")
+    print(" ")
+    print("----End of Output -----------------------------")
+    print(" ")
+    print(" ")
+    print(" ")
+    input("Press enter to continue")
+def exit():
+    print(" ")
+    print("----Start of Output ---------------------------")
+    print(" ")
+    print("----End of Output -----------------------------")
+    print(" ")
+    print(" ")
+    print(" ")
+    input("Press Enter to continue ")
+    quit()
 def menu():
+    clearConsole()
     print(" ------------------------------------------------")
     print("|                                                |")
     print("|    07Menu                                      |")
@@ -17,73 +113,41 @@ def menu():
     print("8. Convert to ascii ")
     print("9. Encode a string ")
     print("x. To Exit ")
-    number = input("Enter an option ")
-    print(" ")
-    print("----Start of Output ---------------------------")
-    print(" ")
-    if number == "1":
-        helloworld()
-    elif number == "2":
-        goodbyeworld()
-    elif number == "3":
-        goodbyeperson()
-    elif number == "4":
-        goodteacher()
-    elif number == "5":
-        forloop()
-    elif number == "6":
-        whileloop()
-    elif number == "x":
-        exit()
-    else:
-        print("invalid option")
-    print(" ")
-    print("----End of Output -----------------------------")
-    print(" ")
-    print(" ")
-    print(" ")
-    if number == "x":
-        input("Press Enter to continue ")
-    else:
-        input("Press Enter to continue ")
-        input.clear("----End of Output -----------------------------")
-        return menu()
-def helloworld():
-    print("Hello World")
-def goodbyeworld():
-    print("Hello World")
-    input("------> Program paused - press enter to continue")
-    print("Goodbye World")
-def goodbyeperson():
-    print("Hello")
-    username = input("What is your name ? ")
-    print("Goodbye " + username)
-def goodteacher():
-    x = input("Teacher's name (try Mr Horan) ")
-    y = "Mr Horan"
-    if x == y:
-        print ("You are lucky, he is a great teacher.")
-    else:
-        print(x + " is an ok teacher")
-def forloop():
-    for x in range(1, 500):
-        print(x)
-def whileloop():
-    i = input("What is the name of this subject ")
-    while i != "IST":
-        print("Not Correct - try again")
-        i = input("What is the name of this subject ")
-    print(" ")
-    print(" ")
-    print(" Congratulations!!")
-    print(" ")
-    print(" ")
-def exit():
-    print(" ")
-    print("----End of Output -----------------------------")
-    print(" ")
-    print(" ")
-    print(" ")
-    input("Press Enter to continue ")
-    quit()
 menu()
+a = input("Enter an option ")
+while a != "x":
+    if a == "1":
+        helloworld()
+    elif a =="2":
+        goodbyeworld()
+    elif a =="3":
+        goodbyeperson()
+    elif a =="4":
+        goodteacher()
+    elif a =="5":
+        forloop()
+    elif a =="6":
+        whileloop()      
+    else:
+        print(" ")
+        print("----Start of Output ---------------------------")
+        print(" ")
+        print("invalid option")
+        print(" ")
+        print("----End of Output -----------------------------")
+        print(" ")
+        print(" ")
+        print(" ")
+        input("Press enter to continue")
+    clearConsole()
+    menu()
+    a = input("Enter an option ")       
+print(" ")
+print("----Start of Output ---------------------------")
+print(" ")
+print("----End of Output -----------------------------")
+print(" ")
+print(" ")
+print(" ")
+input("Press Enter to continue ")
+quit()
